@@ -14,13 +14,13 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-gray-900/80 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 pt-4">
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8 lg:justify-center"
+        className="flex items-center justify-between p-5 m-2  mx-auto max-w-fit px-8 rounded-full bg-white/80 backdrop-blur-sm shadow-lg border border-white/20"
       >
-        <div className="flex lg:hidden flex-1">
-          <span className="text-white font-bold uppercase tracking-widest">
+        <div className="flex lg:hidden flex-1 mr-4">
+          <span className="text-black font-bold uppercase tracking-widest text-sm">
             Portfolio
           </span>
         </div>
@@ -29,9 +29,9 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400 hover:text-white"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black-400 hover:text-white"
           >
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-10 w-10" aria-hidden="true" />
           </button>
         </div>
 
@@ -40,7 +40,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="font-semibold text-white hover:text-gray-400 transition-colors uppercase text-sm tracking-wide"
+              className="font-semiboldtext-white hover:text-gray-400 transition-colors uppercase text-sm tracking-wide"
             >
               {item.name}
             </a>
