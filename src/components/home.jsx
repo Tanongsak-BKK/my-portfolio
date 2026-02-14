@@ -1,6 +1,9 @@
 export default function Home() {
   return (
-    <div className="relative isolate overflow-hidden bg-teal-100/20 py-16 sm:py-15 md:py-55">
+    <div className="relative isolate overflow-hidden bg-white/20 py-16 sm:py-15 md:py-75"style={{
+       backgroundImage: `radial-gradient(#cbd5e1 1px, transparent 1px)`,
+       backgroundSize: '20px 20px'
+     }} >
       <div className="justify-center grid grid-cols-2 grid-rows-1 gap-40 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid-area-1-2-4-3 mx-auto max-w-2xl lg:mx-0 mt-5">
           <h2 className="text-5xl font-semibold tracking-tight text-black ">
@@ -9,7 +12,7 @@ export default function Home() {
           <h1 className="mt-5 text-lg font-medium text-pretty text-black-300 sm:text-xl/8">
             Electronics Computer Technology
           </h1>
-          <p className="border border-white-300 text-center p-5 rounded-lg mt-5 text-lg font-medium text-pretty text-black-300 sm:text-xl/8">
+          <p className=" text-center p-5 rounded-lg mt-5 text-lg font-medium text-pretty text-black-300 sm:text-xl/8rounded-sm bg-white/80 backdrop-blur-sm shadow-lg border border-white/20 ">
             A final-year Electronics Computer Technology student at KMUTNB.
             Specialized in integrating Software and Hardware systems with a core
             foundation in Artificial Intelligence.
@@ -27,9 +30,17 @@ export default function Home() {
                 className="w-6 h-6 opacity-70 hover:opacity-100 transition-opacity"
                 alt="GitHub"
               />
-              <p className="rounded-xl border p-1 border-gray-200 text-black-600 hover:border-transparent hover:bg-gray-600 hover:text-white active:bg-black-700">
-                Contact Me
-              </p>
+              <button
+                type="button"
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+                className="rounded-xl border border-gray-200 px-4 py-2 text-black transition-all hover:border-transparent hover:bg-gray-600 hover:text-white active:bg-gray-800"
+              >
+                Send Message
+              </button>
             </div>
           </div>
         </div>
