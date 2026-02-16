@@ -1,6 +1,6 @@
 import { useState } from "react";
 import phpLogo from '../assets/images/php-logo-bigger.png';
-import cppLogo from '../assets/images/iso_c++_logo.png';
+import cppLogo from '../assets/images/ISO_C++_Logo.png';
 import flutterImg from '../assets/images/flutter.jpg';
 import reactLogo from '../assets/svg/react.svg';
 import resumePdf from '../assets/pdf/tanongsak_phrtpila.pdf';
