@@ -1,3 +1,10 @@
+import phpLogo from '../assets/images/php-logo-bigger.png';
+import cppLogo from '../assets/images/ISO_C++_Logo.png';
+import tailwindLogo from '../assets/images/tailwind-logo.png';
+import mysqlLogo from '../assets/images/MySQL_textlogo.png';
+import reactLogo from '../assets/svg/react.svg';
+import javaLogo from '../assets/svg/java.svg';
+
 export default function Skills() {
   return (
     <div id="skills" className="relative isolate overflow-hidden bg-[#fdfbf7] py-24 sm:py-32">
@@ -12,7 +19,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="src/assets/images/php-logo-bigger.png"
+              src={phpLogo}
               alt="PHP"
             />
             <p className="mt-4 text-gray-800 font-semibold">PHP</p>
@@ -20,7 +27,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="src/assets/images/ISO_C++_Logo.png"
+              src={cppLogo}
               alt="C++"
             />
             <p className="mt-4 text-gray-800 font-semibold">C++</p>
@@ -28,7 +35,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="src/assets/images/tailwind-logo.png"
+              src={tailwindLogo}
               alt="Tailwind CSS"
             />
              <p className="mt-4 text-gray-800 font-semibold">Tailwind</p>
@@ -36,7 +43,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="src/assets/images/MySQL_textlogo.png"
+              src={mysqlLogo}
               alt="MySQL"
             />
              <p className="mt-4 text-gray-800 font-semibold">MySQL</p>
@@ -44,7 +51,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="src/assets/svg/react.svg"
+              src={reactLogo}
               alt="React"
             />
              <p className="mt-4 text-gray-800 font-semibold">React</p>
@@ -52,7 +59,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="src/assets/svg/java.svg"
+              src={javaLogo}
               alt="Java"
             />
              <p className="mt-4 text-gray-800 font-semibold">Java</p>
