@@ -1,35 +1,44 @@
 import { useState } from "react";
 
+import phpLogo from '../assets/images/php-logo-bigger.png';
+import cppLogo from '../assets/images/iso_c++_logo.png';
+import flutterImg from '../assets/images/flutter.jpg';
+import reactLogo from '../assets/svg/react.svg';
+
 export default function Education() {
   const [page, setPage] = useState("edu");
 
   return (
     <div
       id="education"
-      className="relative isolate overflow-hidden bg-[#fdfbf7] py-24 sm:py-32"
+      className="bg-[#fdfbf7] py-24 sm:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-[#2d2d2d] sm:text-4xl font-serif">
-            My Journey
+            Education & Projects
           </h2>
-          <div className="mt-8 flex justify-center">
-            <div className="grid grid-cols-2 gap-x-1 rounded-md bg-white p-1 text-center text-xs font-semibold leading-5 border border-gray-200 shadow-sm">
-              <button
-                onClick={() => setPage("edu")}
-                className={`cursor-pointer rounded-md px-4 py-2.5 transition-all ${page === "edu" ? "bg-gray-100 text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-900"
-                  }`}
-              >
-                Education
-              </button>
-              <button
-                onClick={() => setPage("project")}
-                className={`cursor-pointer rounded-md px-4 py-2.5 transition-all ${page === "project" ? "bg-gray-100 text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-900"
-                  }`}
-              >
-                Projects
-              </button>
-            </div>
+          <p className="mt-2 text-lg leading-8 text-gray-600">
+            My academic journey and practical applications.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+          <div className="grid grid-cols-2 gap-x-1 rounded-md bg-white p-1 text-center text-xs font-semibold leading-5 border border-gray-200 shadow-sm">
+            <button
+              onClick={() => setPage("edu")}
+              className={`cursor-pointer rounded-md px-4 py-2.5 transition-all ${page === "edu" ? "bg-gray-100 text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-900"
+                }`}
+            >
+              Education
+            </button>
+            <button
+              onClick={() => setPage("project")}
+              className={`cursor-pointer rounded-md px-4 py-2.5 transition-all ${page === "project" ? "bg-gray-100 text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-900"
+                }`}
+            >
+              Projects
+            </button>
           </div>
         </div>
 
@@ -44,7 +53,6 @@ export default function Education() {
                 </div>
                 <p className="mt-2 text-base leading-7 text-gray-800 font-medium">Electronics Computer Technology</p>
                 <p className="mt-4 text-sm leading-6 text-gray-600">
-                  Studied software development, databases, microcontroller programming, and basic AI.
                   <a
                     href="src/assets/pdf/tanongsak_phrtpila.pdf"
                     target="_blank"
@@ -65,7 +73,7 @@ export default function Education() {
                 </div>
                 <p className="mt-2 text-base leading-7 text-gray-800 font-medium">Industrial Electronics</p>
                 <p className="mt-4 text-sm leading-6 text-gray-600">
-                  Studied electronic circuit design and calculation along with fundamental PLC programming to control industrial automation systems.
+                  Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.
                 </p>
               </div>
               <div className="paper-card p-8 transition-all hover:shadow-md">
@@ -75,7 +83,7 @@ export default function Education() {
                 </div>
                 <p className="mt-2 text-base leading-7 text-gray-800 font-medium">Business Computer</p>
                 <p className="mt-4 text-sm leading-6 text-gray-600">
-                  Studied Business Computer focusing on web development (HTML/CSS), graphic design (Photoshop, Illustrator), and core business skills including accounting and marketing.
+                  Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum.
                 </p>
               </div>
             </div>
@@ -84,10 +92,63 @@ export default function Education() {
           {page === "project" && (
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               <div className="paper-card overflow-hidden transition-all hover:shadow-md group">
+                <a href="https://example.com/project1" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="h-48 w-full bg-gray-200 overflow-hidden">
+                    <img
+                      src={phpLogo}
+                      alt="Project 1"
+                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-lg font-semibold text-[#2d2d2d] font-serif group-hover:text-[#8d6e63] transition-colors">Project Title 1</h3>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400 group-hover:text-[#8d6e63]">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                    </div>
+                    <p className="mt-2 text-sm text-gray-600">
+                      Brief description of calculation program or web application developed using PHP and MySQL.
+                    </p>
+                    <div className="mt-4 flex gap-2">
+                      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">PHP</span>
+                      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">MySQL</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div className="paper-card overflow-hidden transition-all hover:shadow-md group">
+                <a href="https://example.com/project2" target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="h-48 w-full bg-gray-200 overflow-hidden">
+                    <img
+                      src={cppLogo}
+                      alt="Project 2"
+                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-lg font-semibold text-[#2d2d2d] font-serif group-hover:text-[#8d6e63] transition-colors">Project Title 2</h3>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400 group-hover:text-[#8d6e63]">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                    </div>
+                    <p className="mt-2 text-sm text-gray-600">
+                      Description of a hardware interfacing project or microcontroller programming using C++.
+                    </p>
+                    <div className="mt-4 flex gap-2">
+                      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">C++</span>
+                      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">IoT</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div className="paper-card overflow-hidden transition-all hover:shadow-md group">
                 <a href="https://github.com/Tanongsak-BKK/my_app.git" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="h-48 w-full bg-gray-200 overflow-hidden">
                     <img
-                      src="src/assets/images/flutter.jpg"
+                      src={flutterImg}
                       alt="Mobile App"
                       className="h-full w-full object-cover transition-transform group-hover:scale-105"
                     />
@@ -114,24 +175,24 @@ export default function Education() {
                 <a href="https://github.com/Tanongsak-BKK/my-portfolio.git" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="h-48 w-full bg-gray-200 overflow-hidden">
                     <img
-                      src="src/assets/svg/react.svg"
+                      src={reactLogo}
                       alt="Portfolio"
-                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                      className="h-full w-full object-cover p-4 bg-gray-50 transition-transform group-hover:scale-105"
                     />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between">
-                      <h3 className="text-lg font-semibold text-[#2d2d2d] font-serif group-hover:text-[#8d6e63] transition-colors">Portfolio</h3>
+                      <h3 className="text-lg font-semibold text-[#2d2d2d] font-serif group-hover:text-[#8d6e63] transition-colors">Project Title 3</h3>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-gray-400 group-hover:text-[#8d6e63]">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                       </svg>
                     </div>
                     <p className="mt-2 text-sm text-gray-600">
-                      A portfolio website built with React.js + tailwindcss + vite + emailjs + nodejs.
+                      A modern web application built with React and Tailwind CSS, showcasing responsive design.
                     </p>
                     <div className="mt-4 flex gap-2">
                       <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">React</span>
-                      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Tailwindcss</span>
+                      <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Tailwind</span>
                       <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Vite</span>
                       <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Emailjs</span>
                       <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Nodejs</span>

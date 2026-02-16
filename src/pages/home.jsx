@@ -1,3 +1,6 @@
+import discordIcon from '../assets/svg/discord-alt-svgrepo-com.svg';
+import githubIcon from '../assets/svg/github-svgrepo-com.svg';
+
 export default function Home() {
   return (
     <div id="home" className="relative isolate overflow-hidden bg-[#fdfbf7] py-24 sm:py-32 lg:py-40">
@@ -20,14 +23,14 @@ export default function Home() {
                 <span className="text-sm font-semibold leading-6 text-gray-500 uppercase tracking-widest">follow me</span>
                 <a href="https://discord.com/users/358679074803286016" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="src/assets/svg/discord-alt-svgrepo-com.svg"
+                    src={discordIcon}
                     className="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity cursor-pointer grayscale hover:grayscale-0"
                     alt="Discord"
                   />
                 </a>
                 <a href="https://github.com/Tanongsak-BKK" target="_blank" rel="noopener noreferrer">
                   <img
-                    src="src/assets/svg/github-svgrepo-com.svg"
+                    src={githubIcon}
                     className="w-6 h-6 opacity-60 hover:opacity-100 transition-opacity cursor-pointer grayscale hover:grayscale-0"
                     alt="GitHub"
                   />
