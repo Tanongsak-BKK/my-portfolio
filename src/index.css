@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+@layer base {
+  :root {
+    --color-paper-bg: #fdfbf7;
+    --color-paper-card: #ffffff;
+    --color-text-main: #2d2d2d;
+    --color-text-muted: #5d5d5d;
+    --color-accent: #8d6e63;
+    --color-border: #e5e5e5;
+  }
+
+  body {
+    background-color: var(--color-paper-bg);
+    color: var(--color-text-main);
+    font-family: 'Inter', sans-serif; /* Ensure a clean font is used, or user default */
+  }
+}
+
+@layer components {
+  .paper-card {
+    @apply bg-white border border-gray-200 shadow-sm rounded-lg;
+  }
+  
+  .paper-button {
+    @apply px-4 py-2 rounded-md border border-gray-300 bg-white text-gray-800 hover:bg-gray-50 transition-colors font-medium shadow-sm;
+  }
+
+  .paper-button-primary {
+    @apply px-4 py-2 rounded-md bg-stone-700 text-white hover:bg-stone-800 transition-colors font-medium shadow-sm;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
