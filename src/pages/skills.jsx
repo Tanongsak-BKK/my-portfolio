@@ -44,7 +44,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="public/svg/react.svg"
+              src="public/images/react.svg"
               alt="React"
             />
              <p className="mt-4 text-gray-800 font-semibold">React</p>
@@ -52,7 +52,7 @@ export default function Skills() {
           <div className="paper-card flex flex-col items-center justify-center p-8 transition-all hover:scale-105 hover:shadow-md">
             <img
               className="h-20 w-auto object-contain"
-              src="public/svg/java.svg"
+              src="public/images/java.svg"
               alt="Java"
             />
              <p className="mt-4 text-gray-800 font-semibold">Java</p>
