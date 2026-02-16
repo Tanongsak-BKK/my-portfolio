@@ -11,7 +11,7 @@ export default function About() {
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
           <div className="flex gap-x-4 paper-card p-2 bg-white rotate-[-1deg]">
             <img
-              src="public/images/profile.jpg"
+              src="src/assets/images/profile.jpg"
               alt="Profile"
               className="h-full w-full object-cover rounded-md grayscale-[20%]"
             />

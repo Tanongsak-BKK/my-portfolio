@@ -1,4 +1,9 @@
 import { useState } from "react";
+import phpLogo from '../assets/images/php-logo-bigger.png';
+import cppLogo from '../assets/images/iso_c++_logo.png';
+import flutterImg from '../assets/images/flutter.jpg';
+import reactLogo from '../assets/svg/react.svg';
+import resumePdf from '../assets/pdf/tanongsak_phrtpila.pdf';
 
 export default function Education() {
   const [page, setPage] = useState("edu");
@@ -46,7 +51,7 @@ export default function Education() {
                 <p className="mt-4 text-sm leading-6 text-gray-600">
                   Studied software development, databases, microcontroller programming, and basic AI.
                   <a
-                    href="public/pdf/tanongsak_phrtpila.pdf"
+                    href={resumePdf}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 paper-button flex items-center justify-center gap-2 text-gray-600 hover:text-gray-900"
@@ -87,7 +92,7 @@ export default function Education() {
                 <a href="https://github.com/Tanongsak-BKK/my_app.git" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="h-48 w-full bg-gray-200 overflow-hidden">
                     <img
-                      src="src/assets/images/flutter.jpg"
+                      src={flutterImg}
                       alt="Mobile App"
                       className="h-full w-full object-cover transition-transform group-hover:scale-105"
                     />
@@ -114,7 +119,7 @@ export default function Education() {
                 <a href="https://github.com/Tanongsak-BKK/my-portfolio.git" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="h-48 w-full bg-gray-200 overflow-hidden">
                     <img
-                      src="src/assets/svg/react.svg"
+                      src={reactLogo}
                       alt="Portfolio"
                       className="h-full w-full object-cover transition-transform group-hover:scale-105"
                     />
