@@ -49,7 +49,7 @@ export default function Home() {
           <div className="mt-0 lg:mt-0 lg:ml-auto">
             <div className="p-2 bg-white border border-gray-200 shadow-xl rotate-3 rounded-xl max-w-md mx-auto">
               <img
-                src="src/assets/images/bkks.jpg"
+                src="public/images/bkks.jpg"
                 alt="Profile picture of the developer"
                 className="w-full h-auto rounded-lg object-cover aspect-[4/5] grayscale-[20%] sepia-[10%]"
               />

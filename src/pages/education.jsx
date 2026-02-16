@@ -46,7 +46,7 @@ export default function Education() {
                 <p className="mt-4 text-sm leading-6 text-gray-600">
                   Studied software development, databases, microcontroller programming, and basic AI.
                   <a
-                    href="src/assets/pdf/tanongsak_phrtpila.pdf"
+                    href="public/pdf/tanongsak_phrtpila.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 paper-button flex items-center justify-center gap-2 text-gray-600 hover:text-gray-900"
