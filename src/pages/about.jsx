@@ -1,5 +1,5 @@
 import profileImg from '../assets/images/profile.jpg';
-import resumePdf from '../assets/pdf/tanongsak_phrtpila.pdf';
+import resumePdf from '../assets/pdf/tanongsak_phrtpila_Fe.pdf';
 
 export default function About() {
   return (
