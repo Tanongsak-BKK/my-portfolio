@@ -1,4 +1,5 @@
 import profileImg from '../assets/images/profile.jpg';
+import resumePdf from '../assets/pdf/tanongsak_phrtpila.pdf';
 
 export default function About() {
   return (
@@ -58,9 +59,22 @@ export default function About() {
                 <p className="text-gray-800 font-medium">Problem Solving</p>
               </div>
             </div>
-            <div className="mt-8">
-              <h3 className="text-xl font-semibold text-[#2d2d2d] font-serif">Focusing and passionate</h3>
-              <p className="mt-2 text-gray-600">has an interest in studying to be a back-end developer</p>
+            <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-6">
+              <div>
+                <h3 className="text-xl font-semibold text-[#2d2d2d] font-serif">Focusing and passionate</h3>
+                <p className="mt-2 text-gray-600">has an interest in studying to be a front-end developer</p>
+              </div>
+              <a
+                href={resumePdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="paper-button flex items-center justify-center gap-2 text-gray-600 hover:text-gray-900 ms-30"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0-1.125-.504-1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                </svg>
+                View CV
+              </a>
             </div>
           </div>
         </div>
